@@ -1,0 +1,127 @@
+@import "http://fonts.googleapis.com/css?family=Crushed";
+
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.3.0
+build: 3167
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+
+/* Join The Conf StyleSheet */
+html{
+  height: 100%;
+  background: rgb(55,44,55);
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.18, rgb(55,44,55)),
+      color-stop(1, rgb(88,42,66))
+  );
+  background-image: -moz-linear-gradient(
+      center bottom,
+      rgb(55,44,55) 18%,
+      rgb(88,42,66) 100%
+  );
+}
+
+body ul, body form{
+  margin:  0px auto;
+  width:   500px;
+  padding: 40px;
+  background: #ccbb22;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-box-shadow: 4px 4px 10px rgb(55,44,55);
+  -webkit-box-shadow: 4px 4px 10px rgb(55,44,55);
+  box-shadow: 4px 4px 10px rgb(55,44,55);
+  position: relative;
+}
+
+body form{
+  height: 150px;
+  padding-top: 50px;
+}
+
+body form label, body form input{
+  display: block;
+  float: left;
+  font-family: 'Crushed', arial, serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+body form input{
+  width: 350px;
+  clear: right;
+}
+body form label{
+  width: 140px;
+  clear: left;
+}
+
+.field_with_errors input{
+  background: #ffff22;
+}
+
+.errors{
+  font-family: 'Crushed', arial, serif;
+  width: 500px;
+  text-align:center;
+  position: absolute;
+  top: 20px;
+}
+
+body form input[type='submit']{
+  margin: 10px 100px 10px 0px;
+  width: 300px;
+  display: block;
+  font-size: 15px;
+}
+
+body form a{
+  display: block;
+  float: left;
+  font-family: 'Crushed', arial, serif;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+
+body h1{
+  display: block;
+  width: 500px;
+  font-family: 'Crushed', arial, serif;
+  font-size: 90px;
+  margin:  0px auto -24px auto;
+  color: #ccbb22;
+}
+
+body ul li{
+   font-family: 'Crushed', arial, serif;
+   font-size: 30px;
+   padding: 5;
+}
+
+body ul li .conference{
+  font-size: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px dashed rgb(55,44,55);
+  margin-bottom: 5px
+}
+
+body ul li .conference span::after{
+  content: ',';
+}
+
+body ul li a{
+    display: block;
+    float: right;
+    clear: right;
+    font-size: 15px;
+    text-decoration: none;
+}

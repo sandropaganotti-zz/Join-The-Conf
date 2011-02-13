@@ -7,7 +7,7 @@ JoinTheConf::Application.routes.draw do
   resources "conferences", 
     :only => [:index] do
       resources "attendees", 
-        :only => [:index, :create],
+        :only => [:index, :new, :create],
         :path_names => { 
           :create => "join" }
   end

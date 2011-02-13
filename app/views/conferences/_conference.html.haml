@@ -1,5 +1,6 @@
 %li 
-    = "#{conference.name} - #{conference.start}"
+    = "#{conference.name}: #{conference.start}"
     = link_to '(show attendees)', 
       conference_attendees_path(conference), :remote => true
+    = link_to '(register)', new_conference_attendee_path(conference)
     %div[conference]    
